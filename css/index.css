@@ -148,7 +148,7 @@ body {
 .container header {
   display: flex;
   flex-direction: column;
-  background-color: lightgrey;
+  background-color: #708090;
 }
 .container header img {
   width: 16%;
@@ -177,5 +177,64 @@ body {
   margin: 2%;
   font-size: 1.5rem;
   color: white;
+  background-color: darkgrey;
+}
+.container .section-one {
+  display: flex;
+}
+.container .section-one .div-one {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.container .section-one .div-one h2 {
+  font-size: 2rem;
+}
+.container .section-one .div-one p {
+  font-size: 1rem;
+}
+.container .section-one .div-two {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.container .section-one .div-two h2 {
+  font-size: 2rem;
+}
+.container .section-one .div-two ul {
+  font-size: 1rem;
+}
+.container .section-one .div-two ul li {
+  border: 1px solid lightgrey;
+}
+.container .section-two {
+  display: flex;
+  flex-direction: column;
+}
+.container .section-two h2 {
+  font-size: 2rem;
+}
+.container .section-two table {
+  width: 100%;
+}
+.container .section-two table th {
+  height: 50%;
+  text-align: left;
+}
+.container .section-two table tr {
+  width: 25%;
+}
+.container .section-two table td {
+  height: 50px;
+  vertical-align: bottom;
+}
+.container .section-two table .tr-gray {
+  background-color: #708090;
+}
+.container footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
   background-color: darkgrey;
 }

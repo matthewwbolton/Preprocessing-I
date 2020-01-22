@@ -53,8 +53,11 @@ table {
 	box-sizing: border-box;
 }
 
+@background-color: #708090;
+
+
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
 .container{
@@ -76,7 +79,7 @@ html, body {
 	header{
 		display: flex;
 		flex-direction: column;
-		background-color: lightgrey;
+		background-color: @background-color;
 
 		img{
 			width:16%;
@@ -116,5 +119,82 @@ html, body {
 
 
 	}//closing brackets for .container header
+
+	.section-one{
+		display: flex;
+
+		.div-one{
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+
+			h2{
+				font-size: 2rem;
+			}//closing tag for .section-one .div-one h2
+
+			p{
+				font-size: 1rem;
+			}//closing tag for .section-one .div-one p
+		}//closing tag for .section-one .div-one
+
+		.div-two{
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+
+			h2{
+				font-size: 2rem;
+			}//closing bracket for .section-one .div-two h2
+
+			ul{
+				font-size: 1rem;
+				
+
+				li{
+					border: 1px solid lightgrey;
+				}//closing bracket for .section-one .div-two ul li
+			}//closing tag for .section-one .div-two ul
+		}//closing tag for .section-one .div-two
+	}//closing tag for .container .section-one
+
+	.section-two{
+		display: flex;
+		flex-direction: column;
+
+		h2{
+			font-size: 2rem;
+		}//closing tag for .section-two h2
+
+		table{
+			width: 100%;
+
+			th{
+				height: 50%;
+				text-align: left;
+			}//closing brackets for .section-two table th
+
+			tr{
+				width: 25%;
+			}//closing brackets for .section-two table tr
+
+			td{
+				height: 50px;
+				vertical-align: bottom;
+			}//closing tags for .section-two table td
+
+			.tr-gray{
+				background-color: @background-color;
+			}
+		}//closing tag for .section-two table
+	}//closing tag for .container section-two
+
+	footer{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+		background-color: darkgrey;
+
+	}//closing bracket for .container footer
 
 }//closing bracket for container
