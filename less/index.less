@@ -4,6 +4,10 @@
    License: none (public domain)
 */
 
+//FONT STYLE IMPORT RULES:
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Permanent+Marker&display=swap');
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,10 +54,207 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+//VARIABLES:
+@background-color: #708090;
+@header-font: 'Permanent Marker', cursive;
+@main-font: 'Open Sans Condensed', sans-serif;
+
+//MIXINS:
+.flex-column(){
+	display: flex;
+	flex-direction: column;
+}
+
+.h2-fonts(){
+	font-family: @header-font;
+	font-size: 2rem;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+.container{
+	max-width: 100%;
+	padding: 0 4%;
+	
+	
+	
+	nav{
+		display: flex;
+		justify-content: flex-end;
+
+		@media(max-width: 500px){
+			justify-content: center;
+		}//closing bracket nav media query @500px
+
+		a{
+			margin: 2%;
+
+		}//closing bracket for container nav a
+	}//closing bracket for container nav
+
+		
+
+	header{
+		.flex-column();
+		background-color: @background-color;
+		padding: 2%;
+		
+		@media(max-width: 500px){
+			align-items: center;
+		}//closing bracket for header media query
+
+		img{
+			width:16%;
+			height: 300px;
+			margin: 3%;
+
+			@media(max-width: 500px){
+				width: 70%;
+			}//closing bracket for header img media @500px
+		}//closing tag for .container header img
+
+		.header-one{
+			.flex-column();
+			padding: 1%;
+
+			h1{
+			.h2-fonts();
+			}//closing tag for .header-one h1
+
+			p{
+				font-size: 2rem;
+				font-family: @main-font;
+			}//closing tag for .header-one p
+		}//closing tag for .container header .header-one
+
+		.header-two{
+			.flex-column();
+			align-items: flex-start;
+			padding: 1%;
+
+			@media(max-width: 500px){
+				align-items: unset;
+			}//closing bracket for .header-two media @500px
+
+			p{
+				font-size: 1.5rem;
+				font-family: @main-font;
+			}//closing tag for .header-two p
+
+			button{
+				margin: 2%;
+				font-size: 1.5rem;
+				color: white;
+				background-color: darkgrey;
+				font-family: @header-font;
+				
+				&:hover{
+					background-color: peachpuff;
+				}//closing tag for hover
+			}//closing tag for .header-two button
+		}//closing tag for header .header-two
+
+
+	}//closing brackets for .container header
+
+	.section-one{
+		display: flex;
+
+		@media(max-width: 500px){
+			flex-direction: column;
+			align-items: center;
+		}//closing bracket for .section-one media query @500px
+
+		.div-one{
+			.flex-column();
+			width: 50%;
+			padding: 1%;
+
+			@media(max-width: 500px){
+				width: 100%;
+			}//closing bracket for .section-one .div-one media query @500px
+
+			h2{
+				.h2-fonts();
+			}//closing tag for .section-one .div-one h2
+
+			p{
+				font-size: 1rem;
+				font-family: @main-font;
+			}//closing tag for .section-one .div-one p
+		}//closing tag for .section-one .div-one
+
+		.div-two{
+			.flex-column();
+			width: 50%;
+			padding: 1%;
+
+			@media(max-width: 500px){
+				width: 100%;
+			}//closing brackets for .section-one .div-two media query @500px
+
+			h2{
+				.h2-fonts();
+			}//closing bracket for .section-one .div-two h2
+
+			ul{
+				font-size: 1.5rem;
+				font-family: @main-font;
+				
+
+				li{
+					border: 1px solid lightgrey;
+				}//closing bracket for .section-one .div-two ul li
+			}//closing tag for .section-one .div-two ul
+		}//closing tag for .section-one .div-two
+	}//closing tag for .container .section-one
+
+	.section-two{
+		.flex-column();
+
+		h2{
+			.h2-fonts();
+		}//closing tag for .section-two h2
+
+		table{
+			width: 100%;
+
+			th{
+				height: 50%;
+				text-align: left;
+				font-family: @header-font;
+			}//closing brackets for .section-two table th
+
+			tr{
+				width: 25%;
+			}//closing brackets for .section-two table tr
+
+			td{
+				height: 50px;
+				vertical-align: middle;
+				font-family: @main-font;
+			}//closing tags for .section-two table td
+
+			.tr-gray{
+				background-color: @background-color;
+			}
+		}//closing tag for .section-two table
+	}//closing tag for .container section-two
+
+	footer{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 75px;
+		background-color: darkgrey;
+		font-family: @main-font;
+		margin-top: 4%;
+
+	}//closing bracket for .container footer
+
+}//closing bracket for container
