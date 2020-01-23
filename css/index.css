@@ -150,6 +150,7 @@ body {
 }
 .container {
   max-width: 100%;
+  padding: 0 4%;
 }
 .container nav {
   display: flex;
@@ -162,6 +163,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #708090;
+  padding: 2%;
 }
 .container header img {
   width: 16%;
@@ -171,6 +173,7 @@ body {
 .container header .header-one {
   display: flex;
   flex-direction: column;
+  padding: 1%;
 }
 .container header .header-one h1 {
   font-family: 'Permanent Marker', cursive;
@@ -184,6 +187,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 1%;
 }
 .container header .header-two p {
   font-size: 1.5rem;
@@ -206,6 +210,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 50%;
+  padding: 1%;
 }
 .container .section-one .div-one h2 {
   font-family: 'Permanent Marker', cursive;
@@ -219,6 +224,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 50%;
+  padding: 1%;
 }
 .container .section-one .div-two h2 {
   font-family: 'Permanent Marker', cursive;
@@ -252,7 +258,7 @@ body {
 }
 .container .section-two table td {
   height: 50px;
-  vertical-align: bottom;
+  vertical-align: middle;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 .container .section-two table .tr-gray {
@@ -262,7 +268,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 75px;
   background-color: darkgrey;
   font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: 4%;
 }
