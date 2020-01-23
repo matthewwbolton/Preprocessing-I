@@ -87,6 +87,10 @@ html, body {
 		display: flex;
 		justify-content: flex-end;
 
+		@media(max-width: 500px){
+			justify-content: center;
+		}//closing bracket nav media query @500px
+
 		a{
 			margin: 2%;
 
@@ -99,11 +103,19 @@ html, body {
 		.flex-column();
 		background-color: @background-color;
 		padding: 2%;
+		
+		@media(max-width: 500px){
+			align-items: center;
+		}//closing bracket for header media query
 
 		img{
 			width:16%;
 			height: 300px;
 			margin: 3%;
+
+			@media(max-width: 500px){
+				width: 70%;
+			}//closing bracket for header img media @500px
 		}//closing tag for .container header img
 
 		.header-one{
@@ -124,6 +136,10 @@ html, body {
 			.flex-column();
 			align-items: flex-start;
 			padding: 1%;
+
+			@media(max-width: 500px){
+				align-items: unset;
+			}//closing bracket for .header-two media @500px
 
 			p{
 				font-size: 1.5rem;
@@ -149,10 +165,19 @@ html, body {
 	.section-one{
 		display: flex;
 
+		@media(max-width: 500px){
+			flex-direction: column;
+			align-items: center;
+		}//closing bracket for .section-one media query @500px
+
 		.div-one{
 			.flex-column();
 			width: 50%;
 			padding: 1%;
+
+			@media(max-width: 500px){
+				width: 100%;
+			}//closing bracket for .section-one .div-one media query @500px
 
 			h2{
 				.h2-fonts();
@@ -168,6 +193,10 @@ html, body {
 			.flex-column();
 			width: 50%;
 			padding: 1%;
+
+			@media(max-width: 500px){
+				width: 100%;
+			}//closing brackets for .section-one .div-two media query @500px
 
 			h2{
 				.h2-fonts();
