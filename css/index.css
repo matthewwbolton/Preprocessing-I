@@ -2,6 +2,20 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
+}
 html,
 body,
 div,
@@ -135,7 +149,6 @@ body {
   height: 100%;
 }
 .container {
-  width: 100%;
   max-width: 100%;
 }
 .container nav {
@@ -160,10 +173,12 @@ body {
   flex-direction: column;
 }
 .container header .header-one h1 {
-  font-size: 3rem;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
 }
 .container header .header-one p {
   font-size: 2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 .container header .header-two {
   display: flex;
@@ -172,12 +187,17 @@ body {
 }
 .container header .header-two p {
   font-size: 1.5rem;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 .container header .header-two button {
   margin: 2%;
   font-size: 1.5rem;
   color: white;
   background-color: darkgrey;
+  font-family: 'Permanent Marker', cursive;
+}
+.container header .header-two button:hover {
+  background-color: peachpuff;
 }
 .container .section-one {
   display: flex;
@@ -188,10 +208,12 @@ body {
   width: 50%;
 }
 .container .section-one .div-one h2 {
+  font-family: 'Permanent Marker', cursive;
   font-size: 2rem;
 }
 .container .section-one .div-one p {
   font-size: 1rem;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 .container .section-one .div-two {
   display: flex;
@@ -199,10 +221,12 @@ body {
   width: 50%;
 }
 .container .section-one .div-two h2 {
+  font-family: 'Permanent Marker', cursive;
   font-size: 2rem;
 }
 .container .section-one .div-two ul {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 .container .section-one .div-two ul li {
   border: 1px solid lightgrey;
@@ -212,6 +236,7 @@ body {
   flex-direction: column;
 }
 .container .section-two h2 {
+  font-family: 'Permanent Marker', cursive;
   font-size: 2rem;
 }
 .container .section-two table {
@@ -220,6 +245,7 @@ body {
 .container .section-two table th {
   height: 50%;
   text-align: left;
+  font-family: 'Permanent Marker', cursive;
 }
 .container .section-two table tr {
   width: 25%;
@@ -227,6 +253,7 @@ body {
 .container .section-two table td {
   height: 50px;
   vertical-align: bottom;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 .container .section-two table .tr-gray {
   background-color: #708090;
@@ -237,4 +264,5 @@ body {
   align-items: center;
   height: 50px;
   background-color: darkgrey;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
